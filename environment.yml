@@ -1,0 +1,16 @@
+name: thrive
+channels:
+- conda-forge
+dependencies:
+- python=3.6
+- conda
+- pandas
+- matplotlib
+- numpy
+- scipy
+- scikit-learn
+- librosa
+- keras
+- pip
+- pip:
+  - streamlit
