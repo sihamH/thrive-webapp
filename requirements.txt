@@ -14,3 +14,4 @@ ipywebrtc==0.5.0
 scikit_learn==0.23.1
 gunicorn
 flask==1.1.2
+werkzeug==0.16.1
