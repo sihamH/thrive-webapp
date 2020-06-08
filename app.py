@@ -16,6 +16,10 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/how')
+def how():
+    return render_template('how.html')    
+
 @app.route('/upload')
 def upload():
     return render_template('upload.html')    

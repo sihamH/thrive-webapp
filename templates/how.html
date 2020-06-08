@@ -24,8 +24,8 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="/" >Home</a></li>
-							<li><a href="/how" >How it works?</a></li>
-							<li><a href="/upload"  class="active">Try me!</a></li>
+							<li><a href="/how" class="active">How it works?</a></li>
+							<li><a href="/upload">Try me!</a></li>
 							<!--<li><a href="/results">Results</a></li>-->
 						</ul>
 					</nav>
@@ -34,59 +34,28 @@
 					<div id="main">
 
 						
-						<section id="second" class="main special">
+
+						<section id="first" class="main special">
 							<header class="major">
-								<h2>Upload a file</h2>
-								<p>Upload a speech recording file below then click on submit.</p>
+								<h2>How it works?</h2>
 							</header>
-						
-							<form action = "/results" method = "POST" enctype = "multipart/form-data">
-							<div class="row gtr-uniform">
-								
-								<div class="col-8 col-12-small">
-									<input type="file" name="audio" required/>
-									
-								</div>
-								
-								<div class="col-4 col-12-small">
-									<ul class="actions">
-										<li><input type="submit" value="Submit File" class="primary fit" /></li>
-									</ul>
-								</div>
-							</div>
-							</form>
-							<h1 style="color:red;">{{upload_text}}</h1>
-
-
-<!--
-							<ul class="statistics">
-								<li class="style1">
-									<span class="icon fa-code-fork"></span>
-									<strong>5,120</strong> Etiam
+							<ul class="features">
+								<li>
+									<span class="icon major style1 fa-upload"></span>
+									<h3>Upload Audio</h3>
+									<p>Upload a speech recording file in a ".wav" format.</p>
 								</li>
-								<li class="style2">
-									<span class="icon fa-folder-open-o"></span>
-									<strong>8,192</strong> Magna
+								<li>
+									<span class="icon major style5 fa-desktop"></span>
+									<h3>Spectral Analysis</h3>
+									<p>The audio file is converted into spectrogram, to extract spectral features.</p>
 								</li>
-								<li class="style3">
-									<span class="icon fa-signal"></span>
-									<strong>2,048</strong> Tempus
-								</li>
-								<li class="style4">
-									<span class="icon fa-laptop"></span>
-									<strong>4,096</strong> Aliquam
-								</li>
-								<li class="style5">
-									<span class="icon fa-diamond"></span>
-									<strong>1,024</strong> Nullam
+								<li>
+									<span class="icon major style3 fa-bar-chart"></span>
+									<h3>Prediction</h3>
+									<p>A machine learning model predicts if there is DLD, based on extracted feautres.</p>
 								</li>
 							</ul>
-							<footer class="major">
-								<ul class="actions special">
-									<li><a href="/upload" class="button">Browse</a></li>
-								</ul>
-								-->
-							</footer>
 						</section>
 
 						
@@ -109,7 +78,6 @@
 						</ul>
 					</section>
 				</footer>
-					
 
 			</div>
 

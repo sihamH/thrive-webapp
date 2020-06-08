@@ -1,6 +1,86 @@
+<script>
+	var obj_load={% if set_tab==1%}1{%else%}0{%endif%};
+	tab_load=(obj_load?"#h1":"#");
+ 
+	$(document).ready(function () {
+		if(location.hash || obj_load) {
+		$('a[href=' + (location.hash ||  tab_load) + ']').tab('show');
+		}
+	 });
+ 
+ </script>
+
+
+<!DOCTYPE HTML>
 <html>
-   <body>
-      Welcome to Thrive!
-      <a href="/upload">UPLOAD</a>
-   </body>
+	<head>
+		<title>Thrive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Thrive</h1>
+						<p>Early detection of speech pathology<br />
+						<!--built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>-->
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="/" class="active">Home</a></li>
+							<li><a href="/how">How it works?</a></li>
+							<li><a href="/upload">Try me!</a></li>
+							<!--<li><a href="/results">Results</a></li>-->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>A Web App for Developmental Language Disorder detection</h2>
+										</header>
+										<p>This AI-powered app helps identify children that are potential candidates with
+											developmental language disorder. It is simple to use, non invasive and can be 
+											established in all schools and kindergarten worldwide.</p>
+									</div>
+									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Email</dt>
+								<dd><a href="#">sihamhachi@gmail.com</a></dd>
+						</section>
+						<section>
+							</dl>
+							<h2>Find me online</h2>
+							<ul class="icons">
+								<li><a href="https://github.com/sihamH/thrive-flask" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/sihamhachi/" class="icon fa-linkedin alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+					</footer>
+
+			</div>
+
+	</body>
 </html>

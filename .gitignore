@@ -3,3 +3,6 @@ data/zip/
 data/raw/
 src/__pycache__/
 .DS_Store
+templates/old/
+templates/elements.html
+templates/generic.html
