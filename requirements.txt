@@ -12,3 +12,4 @@ Keras==2.1.6
 ipython==7.15.0
 ipywebrtc==0.5.0
 scikit_learn==0.23.1
+gunicorn
