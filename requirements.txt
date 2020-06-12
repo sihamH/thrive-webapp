@@ -7,6 +7,7 @@ joblib==0.15.1
 pandas==1.0.4
 tensorflow==1.8.0
 librosa==0.6.1
+numba==0.49.1
 seaborn==0.10.1
 Keras==2.1.6
 ipython==7.15.0
