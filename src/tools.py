@@ -4,14 +4,18 @@ import numpy as np
 import csv
 
     
-def read_file(path):
+def read_file(path, keep_single):
 
     labels = []
     files = [] 
     for r, d, f in os.walk(path):
         for file in f:
-            if (('.wav' in file) or ('.WAV' in file)) and ('SOUHL' not in r) and ('SAMOHL' not in r):
-                files.append(os.path.join(r, file))
+            if keep_single:
+                if (('.wav' in file) or ('.WAV' in file)):
+                    files.append(os.path.join(r, file))
+            else:    
+                if (('.wav' in file) or ('.WAV' in file)) and ('SOUHL' not in r) and ('SAMOHL' not in r):
+                    files.append(os.path.join(r, file))
 
     return files
 

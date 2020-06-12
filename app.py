@@ -35,10 +35,10 @@ def results():
         modelpath = './models/DLmodel.h5'
         p = prediction.predict_NN(features, modelpath)
 
-        if p == 0:
+        if p == 1:
             return render_template('upload.html', upload_text='There seems to be speech disorder')
         else:
-            return render_template('upload.html', upload_text='No speech disorder has been detected')
+            return render_template('upload.html', upload_text2='No speech disorder has been detected')
         os.remove()
     else:
         return render_template('upload.html', upload_text='Please upload a file') 

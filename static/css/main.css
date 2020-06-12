@@ -1,3 +1,5 @@
+
+
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
@@ -100,10 +102,10 @@ input, select, textarea {
 
 	body {
 		background-color: #3f9286;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #3f9286 15%, #3f9286 85%);
+		/*background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #3f9286 15%, #3f9286 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #3f9286 15%, #3f9286 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #3f9286 15%, #3f9286 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #3f9286 15%, #3f9286 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #3f9286 15%, #3f9286 85%);*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,7 +122,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #212729;
+		background-color: #63beb1;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2275,7 +2277,7 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #63d297;
+			color: #50ad7b;
 		}
 
 		.icon.style2 {
