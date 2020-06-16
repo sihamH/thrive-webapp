@@ -14,7 +14,7 @@ rawdatapath =  here() / "data/raw/"
 csvdatapath  =  here() / "data/csv/"
 
 # parameters
-csvfilename = '/full_dataset'
+csvfilename = '/more_features_dataset'
 keep_single = True
 
 # Load files recursively from folder

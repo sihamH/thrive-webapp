@@ -24,7 +24,7 @@ def load_audio_data(files, savecsv, csvname):
 
     if savecsv:
         # csv header
-        header = 'filename chroma_stft rmse spectral_centroid spectral_bandwidth rolloff zero_crossing_rate'
+        header = 'filename chroma_stft rmse spectral_centroid spectral_bandwidth rolloff zero_crossing_rate onset pitches magnitudes'
         for i in range(1, 21):
             header += f' mfcc{i}'
         header += ' label'
@@ -46,6 +46,8 @@ def load_audio_data(files, savecsv, csvname):
         spec_bw = librosa.feature.spectral_bandwidth(y=y, sr=sr)
         rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr)
         zcr = librosa.feature.zero_crossing_rate(y)
+        onset = librosa.onset.onset_strength(y=y, sr=sr)
+        pitches, magnitudes = librosa.piptrack(y=y, sr=sr)
         mfcc = librosa.feature.mfcc(y=y, sr=sr)
 
         # append labels
@@ -54,7 +56,7 @@ def load_audio_data(files, savecsv, csvname):
         else:
             fname = ff.split('/')[-3] + '_' + ff.split('/')[-2] +'_'+ ff.split('/').pop()
         
-        to_append = f'{fname} {np.mean(chroma_stft)} {np.mean(rmse)} {np.mean(spec_cent)} {np.mean(spec_bw)} {np.mean(rolloff)} {np.mean(zcr)}'    
+        to_append = f'{fname} {np.mean(chroma_stft)} {np.mean(rmse)} {np.mean(spec_cent)} {np.mean(spec_bw)} {np.mean(rolloff)} {np.mean(zcr)} {np.mean(onset)} {np.mean(pitches)} {np.mean(magnitudes)}'
         for e in mfcc:
             to_append += f' {np.mean(e)}'
         if 'Healthy' in ff:   
@@ -86,3 +88,7 @@ def prep_for_modeling(df):
     X = scaler.fit_transform(np.array(df.iloc[:, :-1], dtype = float))
 
     return X, y    
+
+
+
+    

@@ -101,11 +101,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #3f9286;
-		/*background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #3f9286 15%, #3f9286 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #3f9286 15%, #3f9286 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #3f9286 15%, #3f9286 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #3f9286 15%, #3f9286 85%);*/
+		background-color: #b3ddb9;
+		/*background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #b3ddb9 15%, #b3ddb9 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #b3ddb9 15%, #b3ddb9 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #b3ddb9 15%, #b3ddb9 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #b3ddb9 15%, #b3ddb9 85%);*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -122,7 +122,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #63beb1;
+		background-color: #8ABFAB;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2277,7 +2277,7 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #ffcd6d;
+			color: #B3DDB9;
 		}
 
 		.icon.style2 {
@@ -2285,7 +2285,7 @@ input, select, textarea {
 		}
 
 		.icon.style3 {
-			color: #ffaf6d;
+			color: #3D6572;
 		}
 
 		.icon.style4 {
@@ -2293,7 +2293,7 @@ input, select, textarea {
 		}
 
 		.icon.style5 {
-			color: #6689d3;
+			color: #FFDE82;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -2870,7 +2870,7 @@ input, select, textarea {
 		}
 
 			.statistics li.style1 {
-				background-color: #3f9286;
+				background-color: #b3ddb9;
 			}
 
 			.statistics li.style2 {
@@ -3397,7 +3397,7 @@ input, select, textarea {
 			#main input[type="button"].primary,
 			#main button.primary,
 			#main .button.primary {
-				background-color: #3f9286;
+				background-color: #b3ddb9;
 				color: #ffffff !important;
 				box-shadow: none;
 			}
@@ -3534,10 +3534,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #3f9286, #fff176);
-			background-image: -webkit-linear-gradient(90deg, #3f9286, #fff176);
-			background-image: -ms-linear-gradient(90deg, #3f9286, #fff176);
-			background-image: linear-gradient(90deg, #3f9286, #fff176);
+			background-image: -moz-linear-gradient(90deg, #b3ddb9, #fff176);
+			background-image: -webkit-linear-gradient(90deg, #b3ddb9, #fff176);
+			background-image: -ms-linear-gradient(90deg, #b3ddb9, #fff176);
+			background-image: linear-gradient(90deg, #b3ddb9, #fff176);
 		}
 
 		#main table tbody tr {
