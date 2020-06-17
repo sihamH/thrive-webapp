@@ -24,7 +24,7 @@ def load_audio_data(files, savecsv, csvname):
 
     if savecsv:
         # csv header
-        header = 'filename chroma_stft rmse spectral_centroid spectral_bandwidth rolloff zero_crossing_rate onset pitches magnitudes'
+        header = 'filename chroma_stft rmse spectral_centroid spectral_bandwidth rolloff zero_crossing_rate'
         for i in range(1, 21):
             header += f' mfcc{i}'
         header += ' label'
@@ -56,7 +56,7 @@ def load_audio_data(files, savecsv, csvname):
         else:
             fname = ff.split('/')[-3] + '_' + ff.split('/')[-2] +'_'+ ff.split('/').pop()
         
-        to_append = f'{fname} {np.mean(chroma_stft)} {np.mean(rmse)} {np.mean(spec_cent)} {np.mean(spec_bw)} {np.mean(rolloff)} {np.mean(zcr)} {np.mean(onset)} {np.mean(pitches)} {np.mean(magnitudes)}'
+        to_append = f'{fname} {np.mean(chroma_stft)} {np.mean(rmse)} {np.mean(spec_cent)} {np.mean(spec_bw)} {np.mean(rolloff)} {np.mean(zcr)}'
         for e in mfcc:
             to_append += f' {np.mean(e)}'
         if 'Healthy' in ff:   
