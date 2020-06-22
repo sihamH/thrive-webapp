@@ -101,7 +101,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #b3ddb9;
+		background-color: #8abfab;
 		/*background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #b3ddb9 15%, #b3ddb9 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #b3ddb9 15%, #b3ddb9 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #b3ddb9 15%, #b3ddb9 85%);
@@ -3397,7 +3397,7 @@ input, select, textarea {
 			#main input[type="button"].primary,
 			#main button.primary,
 			#main .button.primary {
-				background-color: #b3ddb9;
+				background-color: #8abfab;
 				color: #ffffff !important;
 				box-shadow: none;
 			}
