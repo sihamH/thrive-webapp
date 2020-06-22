@@ -36,9 +36,9 @@ def results():
         p = prediction.predict_NN(features, modelpath)
 
         if p == 1:
-            return render_template('upload.html', upload_text='There seems to be speech disorder')
+            return render_template('results.html', upload_text='There seems to be speech disorder', toto="red")
         else:
-            return render_template('upload.html', upload_text2='No speech disorder has been detected')
+            return render_template('results.html', upload_text2='No speech disorder has been detected', toto2="green")
         os.remove()
     else:
         return render_template('upload.html', upload_text='Please upload a file') 
