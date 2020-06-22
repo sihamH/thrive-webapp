@@ -6,3 +6,4 @@ src/__pycache__/
 templates/old/
 templates/elements.html
 templates/generic.html
+src/.ipynb_checkpoints/
