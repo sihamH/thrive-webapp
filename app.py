@@ -22,7 +22,7 @@ def how():
 
 @app.route('/upload')
 def upload():
-    return render_template('upload.html')    
+    return render_template('upload.html')       
 
 @app.route('/results', methods = ['GET', 'POST'])
 def results():
@@ -43,6 +43,9 @@ def results():
     else:
         return render_template('upload.html', upload_text='Please upload a file') 
         
-
+@app.route('/learnmore')
+def learnmore():
+    return render_template('learnmore.html')  
+    
 if __name__ == '__main__':
    app.run(debug = True)
