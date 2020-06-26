@@ -1,3 +1,7 @@
+<a href="https://thrive-webapp.herokuapp.com/">
+    <img src="./static/img/Thrive.png" alt="Thrive logo" title="Thrive" align="right" height="60" />
+</a>
+
 # Thrive: Early Detection of Speech Pathology
 Insight Data Science Project
 
@@ -10,8 +14,6 @@ Thrive was developed to detect Developemental Language Disorder in children from
 The web app is available at: [Thrive](https://thrive-webapp.herokuapp.com/) and in this repository, you can find all the necessary 
 code to run the app.
 
----
-
 ### The data
 For this project I have used a database of labelled speech recordings from Czech children who were asked to repeart utterances.
 From these recordings, I extracted glottal features, prosodic features and MFCCs that I combined together and used as an input
@@ -20,7 +22,11 @@ to a machine learning pipeline.
 ### Modeling
 After data cleaning and feature selection I trained a Logisitc Regressor to model the data and classify speech recordings.
 
+## Installation
 
+### Clone
+
+- Clone this repo to your local machine using `git clone https://github.com/sihamH/thrive-webapp.git`
 
 
 ## Getting Started
@@ -52,57 +58,3 @@ until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
