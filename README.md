@@ -1,5 +1,5 @@
 <a href="https://thrive-webapp.herokuapp.com/">
-    <img src="static/img/thrive.png" title="Thrive" align="right" height="60" />
+    <img src="static/img/thrive.png" title="Thrive" align="right" height="80" />
 </a>
 
 # Thrive: Early Detection of Speech Pathology
