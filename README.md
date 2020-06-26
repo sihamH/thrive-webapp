@@ -7,7 +7,7 @@ Insight Data Science Project
 
 ## Project Description
 Developmental Language Disorder is a type of speech pathology. It affecrs 7% of children who often struggle at school.
-Early diagnosis is key to provide them with optimal therapy but the problem is that most cases are identified at a relatively 
+Early diagnosis is key to provide them with an optimal therapy but the problem is that most cases are identified at a relatively 
 late age.
 
 Thrive was developed to detect Developemental Language Disorder in children from speech recordings.
