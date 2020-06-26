@@ -1,5 +1,5 @@
 <a href="https://thrive-webapp.herokuapp.com/">
-    <img src="./static/img/Thrive.png" alt="Thrive logo" title="Thrive" align="right" height="60" />
+    <img src="static/img/Thrive.png" title="Thrive" align="right" height="60" />
 </a>
 
 # Thrive: Early Detection of Speech Pathology
@@ -26,7 +26,10 @@ After data cleaning and feature selection I trained a Logisitc Regressor to mode
 
 ### Clone
 
-- Clone this repo to your local machine using `git clone https://github.com/sihamH/thrive-webapp.git`
+- Clone this repo to your local machine using 
+```
+git clone https://github.com/sihamH/thrive-webapp.git
+```
 
 
 ## Getting Started
